@@ -5,7 +5,8 @@ IConfigurationBuilder builder = new ConfigurationBuilder()
                                 .SetBasePath(Directory.GetCurrentDirectory())
                                 .AddJsonFile("appsettings.json", false, true)
                                 .AddJsonFile("appSettings.Development.json", true, true)
-                                .AddUserSecrets<Program>();
+                                .AddUserSecrets<Program>()
+                                .AddCommandLine(args);
 
 IConfigurationRoot config = builder.Build();
 

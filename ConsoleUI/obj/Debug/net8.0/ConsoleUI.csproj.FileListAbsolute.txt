@@ -26,3 +26,5 @@
 /Users/ymac/Code/DotNetCLI/Tim Corey/AppSettings01/ConsoleUI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll
 /Users/ymac/Code/DotNetCLI/Tim Corey/AppSettings01/ConsoleUI/bin/Debug/net8.0/dotnet-user-secrets.dll
 /Users/ymac/Code/DotNetCLI/Tim Corey/AppSettings01/ConsoleUI/obj/Debug/net8.0/UserSecretsAssemblyInfo.cs
+/Users/ymac/Code/DotNetCLI/Tim Corey/AppSettings01/ConsoleUI/obj/Debug/net8.0/ConsoleUI.sourcelink.json
+/Users/ymac/Code/DotNetCLI/Tim Corey/AppSettings01/ConsoleUI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.CommandLine.dll
