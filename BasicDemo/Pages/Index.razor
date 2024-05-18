@@ -1,0 +1,38 @@
+﻿@page "/"
+@inject IConfiguration config
+
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+
+
+<p>
+    MySetting Value: @mySetting
+</p>
+<p>
+    MySubSetting Value: @mySubSetting
+</p>
+<p>
+    MySubSubSetting Value: @mySubSubSetting
+</p>
+<p>
+    ConnectionString Value: @conn
+</p>
+
+@code{
+    string? mySetting = string.Empty;
+    string mySubSetting = string.Empty;
+    string mySubSubSetting = string.Empty;
+    string conn = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        mySetting = config["MySetting"];
+        mySetting = config.GetValue<string>("MySetting") ?? "There is no settings";
+        mySubSetting = config.GetValue<string>("MainSetting:SubSetting") ?? "There is no settings";
+        mySubSubSetting = config.GetValue<string>("MainSetting:SubSection:SubSubSetting") ?? "There is no settings";
+        conn = config.GetConnectionString("Default") ?? "There is no settings";
+    }
+}
